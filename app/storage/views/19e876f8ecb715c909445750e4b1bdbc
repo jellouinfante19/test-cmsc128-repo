@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Application Form</title>
+	</head>
+	<body>
+		<h2>Add Subject</h2>
+		<?php echo Form::open(array('route'=>'add_subject')); ?>
+
+			<?php echo Form::label('Subject_code', 'Subject Code'); ?>
+
+			<?php echo Form::text('Subject_code'); ?><br>
+
+			<?php echo Form::label('Title', 'Subject Title'); ?>
+
+			<?php echo Form::text('Title'); ?><br>
+
+			<?php echo Form::label('Semester_offered', 'Semester Offered'); ?>
+
+			<?php echo Form::text('Semester_offered'); ?><br>
+
+			<?php echo Form::label('Grade_level', 'Grade Level'); ?>
+
+			<?php echo Form::text('Grade_level'); ?><br>
+
+			<?php echo Form::submit('Submit'); ?>		
+		<?php echo Form::close(); ?>
+
+		
+	</body>
+</html>
+
